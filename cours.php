@@ -14,30 +14,23 @@
 <h1> Mon Site Web</h1>
 
 
-
-  
-
-       <?php
+<?php /*boucle*/
     
-    $age = 19; //changer pour voir la condition s'appliquer
-    
-if ($age <= 17)
+for ($boucle=1;$boucle<=10;$boucle++)
 {
- ?> 
-    <p style= "color: blue";> Salut jeune! </p>
+   echo '<p> Ceci est le numero ' . $boucle . ' de la boucle </p>';
+}
+    ?>
+    
     <?php
-}
-    elseif ($age==18)
-    {
-        echo ' Tu as pile l\'age ^^'; // le \ sert à mettre le ' 
-
-}
-    else
-    {
-        echo 'Bonjour Adulte!';
-    }
-
-?>
+    $repet=0;
+    
+        while ($repet<=3)
+        {
+        echo 'ceci est la repet ' . $repet . ' :) '; //en ligne parce que pas de <p>
+         $repet=$repet + 1;
+        }
+    ?>
 </body>
 
 </html>
