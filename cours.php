@@ -6,7 +6,7 @@
 
 
     
-<title> Cours Php </title>
+<title> Test Commit </title>
 </head>
 
 <body>
@@ -14,23 +14,18 @@
 <h1> Mon Site Web</h1>
 
 
-<?php /*boucle*/
+<?php //tableaux
     
-for ($boucle=1;$boucle<=10;$boucle++)
-{
-   echo '<p> Ceci est le numero ' . $boucle . ' de la boucle </p>';
-}
+    $nom = array ('Loïc', 'Coralie','Kiwie');
+    
+    foreach ($nom as $detail)
+    {
+        echo $detail;
+    }
+       
     ?>
     
-    <?php
-    $repet=0;
     
-        while ($repet<=3)
-        {
-        echo 'ceci est la repet ' . $repet . ' :) '; //en ligne parce que pas de <p>
-         $repet=$repet + 1;
-        }
-    ?>
 </body>
 
 </html>
